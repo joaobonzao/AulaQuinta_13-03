@@ -1,0 +1,27 @@
+package javaapplication127;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication127 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        //Declarar variáveis
+        double valor1, valor2, quantidade;
+        //Entrada de dados  
+        System.out.println("Insira a quantidade de maçãs:");
+        quantidade = ler.nextInt();
+        //Processamento e saida e dados
+        if (quantidade < 12) {
+            valor1 = quantidade * 1.30;
+            System.out.println("O valor deu: " + valor1);
+        } else {
+            valor2 = quantidade * 1;
+            System.out.println("O valor deu: " + valor2);
+        }
+
+    }
+}
+
