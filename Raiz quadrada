@@ -1,0 +1,25 @@
+package javaapplication127;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication127 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        //Declarar variáveis
+        double numero,numeroSqrt;
+        //Entrada de dados  
+        System.out.println("Insira 1 número:");
+        numero = ler.nextInt();
+        //Processamento e saida e dados
+       if (numero>0){
+           numeroSqrt = Math.sqrt(numero);
+           System.out.println("A raíz quadrada desse número é: " + decimal.format(numeroSqrt) );
+    }else{
+           System.out.println("O número: "+ numero + " é inválido");
+       }
+
+    }
+}
