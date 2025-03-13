@@ -1,0 +1,33 @@
+package javaapplication127;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication127 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        //Declarar variáveis
+        int anoNascimento, idade;
+        //Entrada de dados      
+        System.out.println("Digite seu ano de nascimento:");
+        anoNascimento = ler.nextInt();
+        //Processamento
+        idade = 2025 - anoNascimento;
+        //Saida de dados
+        if (idade >= 14) {
+            System.out.println("O cidadão é maior de idade");
+            System.out.println("Ele tem: " + idade);
+        }
+        if (idade <= 18) {
+            System.out.println("Bebezinho da mamãe ");
+            System.out.println("O mela frauda tem: " + idade);
+        }
+        if (idade >= 60) {
+            System.out.println("Ele está véio");
+        }
+
+    }
+
+}
