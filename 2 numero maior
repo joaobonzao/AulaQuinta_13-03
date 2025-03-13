@@ -1,0 +1,27 @@
+package javaapplication127;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication127 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        //Declarar variáveis
+        int numero1, numero2, maiorNumero;
+        //Entrada de dados  
+        System.out.println("Insira o primeiro número:");
+        numero1 = ler.nextInt();
+        System.out.println("Insira o segundo número:");
+        numero2 = ler.nextInt();
+        //Processamento e saída de dados
+        if (numero1 >= numero2) {
+            System.out.println("O 1° Número é o maior.");
+        } else  {
+            System.out.println("O 2° Número é o maior.");
+
+        }
+    }
+}
+
