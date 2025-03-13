@@ -1,0 +1,32 @@
+package javaapplication127;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication127 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        //Declarar variáveis
+        double nota1, nota2, media;
+        //Entrada de dados  
+        System.out.println("Insira sua primeira nota:");
+        nota1 = ler.nextInt();
+        System.out.println("Insira sua segunda nota:");
+        nota2 = ler.nextInt();
+        //Processamento
+        media = (nota1 + nota2)/2;
+        //Saida e dados
+        if (media >= 0){
+            if(media <=10){
+                System.out.println("Sua média é: " + media);
+
+            }else{
+                System.out.println("Media inválida");
+            }
+        
+        }
+
+    }
+}
