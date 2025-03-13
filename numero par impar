@@ -1,0 +1,26 @@
+package javaapplication127;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication127 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        //Declarar variáveis
+        int numero1;
+        //Entrada de dados  
+        System.out.println("Insira o primeiro número:");
+        numero1 = ler.nextInt();
+       
+        //Processamento e saida e dados
+        if (numero1 %2 == 0){
+            System.out.println("O  Número é par");
+        }else{
+            System.out.println("O Número é impar");
+        }
+       
+  
+    }
+}
