@@ -1,0 +1,33 @@
+package javaapplication127;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class JavaApplication127 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        //Declarar variáveis
+        int numeroGols1,numeroGols2;
+        String time1, time2;
+        //Entrada de dados  
+        System.out.println("Digite o nome do primeiro time");
+        time1 = ler.nextLine();
+        System.out.println("Digite o nome do segundo time:");
+        time2 = ler.nextLine();
+        System.out.println("Insira o número de gols marcados do primeiro time:");
+        numeroGols1 = ler.nextInt();
+        System.out.println("Insira o número de gols marcados do segundo time:");
+        numeroGols2 = ler.nextInt();
+        //Processamento e saida e dados
+       if (numeroGols1 > numeroGols2){
+           System.out.println(time1 + " VENCEDOR");
+       }else if(numeroGols1 == numeroGols2){
+           System.out.println("EMPATE");
+       }else{
+           System.out.println(time2 +" VENCEDOR");
+       }
+
+    }
+}
